@@ -2,11 +2,19 @@
 
 namespace CsharpIntermediate
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      var person = new Person();
+      person.FirstName = "Cal";
+      person.LastName = "Vina";
+      person.Age = 25;
+      Console.WriteLine(person.FullName);
+
+      Stopwatch s = new Stopwatch();
+      s.StopWatch();
     }
+  }
 }
+
