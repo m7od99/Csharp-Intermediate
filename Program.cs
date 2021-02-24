@@ -13,7 +13,21 @@ namespace CsharpIntermediate
       Console.WriteLine(person.FullName);
 
       Stopwatch s = new Stopwatch();
-      s.StopWatch();
+      //s.StopWatch();
+
+      Post post = new Post();
+      post.DoUpVote();
+      post.DoUpVote();
+      post.DoUpVote();
+      post.DoUpVote();
+      post.DoDownVote();
+      post.DoDownVote();
+      post.DoDownVote();
+      post.DoDownVote();
+      post.DoDownVote();
+      post.ShowCurrentVote();
+
+
     }
   }
 }

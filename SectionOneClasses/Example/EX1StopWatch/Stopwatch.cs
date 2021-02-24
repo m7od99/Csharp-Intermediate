@@ -39,7 +39,7 @@ namespace CsharpIntermediate
       Duration(start, stop);
     }
 
-    private static void Duration(TimeSpan start, TimeSpan stop)
+    private void Duration(TimeSpan start, TimeSpan stop)
     {
       var duration = stop - start;
       Console.WriteLine($"The Duration : {duration}");
