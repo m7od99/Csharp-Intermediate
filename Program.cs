@@ -15,19 +15,23 @@ namespace CsharpIntermediate
       Stopwatch s = new Stopwatch();
       //s.StopWatch();
 
-      Post post = new Post();
-      post.DoUpVote();
-      post.DoUpVote();
-      post.DoUpVote();
-      post.DoUpVote();
-      post.DoDownVote();
-      post.DoDownVote();
-      post.DoDownVote();
-      post.DoDownVote();
-      post.DoDownVote();
-      post.ShowCurrentVote();
+      // Post post = new Post();
+      // post.DoUpVote();
+      // post.DoUpVote();
+      // post.DoUpVote();
+      // post.DoUpVote();
+      // post.DoDownVote();
+      // post.DoDownVote();
+      // post.DoDownVote();
+      // post.DoDownVote();
+      // post.DoDownVote();
+      // post.ShowCurrentVote();
 
-
+      var test = new Stack();
+      test.Push(1);
+      test.Push(5);
+      Console.WriteLine(test.Pop());
+      Console.WriteLine(test.Pop());
     }
   }
 }
