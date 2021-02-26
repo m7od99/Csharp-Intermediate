@@ -35,6 +35,12 @@ namespace CsharpIntermediate
 
       var command = new DbCommand(new SqlConnection("hmm"), "DoSomething");
       command.Execute();
+      var command2 = new DbCommand(new OracleConnection("hmm"), "do some thing");
+      command2.Execute();
+
+      var work = new WorkflowEngine();
+      work.Run(new WorkFlow());
+      work.Run(new AnotherWorkFlow());
     }
   }
 }
